@@ -35,8 +35,8 @@ Esta é a implemetação do Design Criado pela Olha Soroka, [Design Free do Upla
 - Mobile-first
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
-- [TailwindCSS](https://tailwindcss.com/) - For styles
-- [Framer Motion](https://www.framer.com/motion/) - For animations
+- [TailwindCSS](https://tailwindcss.com/) - CSS framework
+- [Framer Motion](https://www.framer.com/motion/) - Para as animações
 
 ### Desenvolvimento contínuo
 
