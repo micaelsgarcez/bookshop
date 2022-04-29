@@ -170,7 +170,7 @@ export default function Home() {
               ))}
             </ul>
           </aside>
-          <div className='grid grid-cols-2 gap-20'>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-20'>
             {products.map((item) => {
               let rating = []
               for (let i = 0; i < 5; i++) {
@@ -181,7 +181,7 @@ export default function Home() {
                 }
               }
               return (
-                <div key={item.name} className='flex mb-5'>
+                <div key={item.name} className='flex mb-5 max-w-md'>
                   <div className='flex-none relative w-52 h-[300px] shadow-promo mr-9'>
                     <Image src={item.imageUrl} layout='fill'></Image>
                   </div>

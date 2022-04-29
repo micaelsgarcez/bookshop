@@ -12,27 +12,19 @@ export default function Banner() {
       ></Image>
       <a
         href='#'
-        className='shadow-promo block absolute top-[4.15vw] left-[55.05vw]'
+        className='block absolute top-[4.15vw] right-4 2xl:left-[55.05vw]'
       >
-        <Image
-          src='/promo-1.png'
-          layout='fixed'
-          width={149}
-          height={204}
-          quality={100}
-        ></Image>
+        <div className='block w-[111.75px] h-[153px] lg:w-[149px] lg:h-[204px] relative shadow-promo'>
+          <Image src='/promo-1.png' layout='fill' quality={100}></Image>
+        </div>
       </a>
       <a
         href='#'
-        className='shadow-promo block absolute bottom-[3.65vw] right-[-1.2vw] translate-x-[100%]'
+        className='block absolute bottom-[3.65vw] right-4 2xl:right-[-1.2vw] 2xl:translate-x-[100%]'
       >
-        <Image
-          src='/promo-2.png'
-          layout='fixed'
-          width={137}
-          height={273}
-          quality={100}
-        ></Image>
+        <div className='block w-[102.75px] h-[204.75px] lg:w-[137px] lg:h-[273px] relative shadow-promo'>
+          <Image src='/promo-2.png' layout='fill' quality={100}></Image>
+        </div>
       </a>
     </section>
   )
