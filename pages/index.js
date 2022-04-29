@@ -4,6 +4,7 @@ import Link from 'next/link'
 
 import Navigation from '/components/Nav'
 import Banner from '/components/Banner'
+import FadeIn from '/components/Motion/FadeIn'
 
 export default function Home() {
   const products = [
@@ -154,24 +155,26 @@ export default function Home() {
         <section className='pt-20 md:pt-44 pb-24 flex items-start  flex-col md:flex-row'>
           <aside className='flex-none w-48 bg-before relative mb-10'>
             <ul>
-              {categories.map((item) => (
+              {categories.map((item, index) => (
                 <li key={item.label} className='mb-6'>
-                  <a
-                    className={`hover:text-[#1C2A39] transition-all duration-300 ${
-                      item.label == 'Bestsellers'
-                        ? 'pl-5 circle-before relative font-bold text-md text-[#1C2A39]'
-                        : 'text-xs font-medium text-[#5C6A79] '
-                    }`}
-                    href={item.link}
-                  >
-                    {item.label}
-                  </a>
+                  <FadeIn direction='top' delay={0.05 * index}>
+                    <a
+                      className={`hover:text-[#1C2A39] transition-all duration-300 ${
+                        item.label == 'Bestsellers'
+                          ? 'pl-5 circle-before relative font-bold text-md text-[#1C2A39]'
+                          : 'text-xs font-medium text-[#5C6A79] '
+                      }`}
+                      href={item.link}
+                    >
+                      {item.label}
+                    </a>
+                  </FadeIn>
                 </li>
               ))}
             </ul>
           </aside>
           <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 md:gap-20'>
-            {products.map((item) => {
+            {products.map((item, index) => {
               let rating = []
               for (let i = 0; i < 5; i++) {
                 if (i < item.rating) {
@@ -185,10 +188,14 @@ export default function Home() {
                   key={item.name}
                   className='flex mb-5 max-w-md flex-col md:flex-row'
                 >
-                  <div className='flex-none relative w-[288px] md:w-52 h-[408px] md:h-[300px] shadow-promo mb-8 md:mb-0 md:mr-9'>
+                  <FadeIn
+                    direction='top'
+                    delay={0.1 * index}
+                    className='flex-none relative w-[288px] md:w-52 h-[408px] md:h-[300px] shadow-promo mb-8 md:mb-0 md:mr-9'
+                  >
                     <Image src={item.imageUrl} layout='fill'></Image>
-                  </div>
-                  <div>
+                  </FadeIn>
+                  <FadeIn direction='top' delay={0.1 * index}>
                     <h3 className='open-sans text-[#5C6A79] text-xs mb-1'>
                       {item.author}
                     </h3>
@@ -229,7 +236,7 @@ export default function Home() {
                     >
                       Buy Now
                     </a>
-                  </div>
+                  </FadeIn>
                 </div>
               )
             })}
