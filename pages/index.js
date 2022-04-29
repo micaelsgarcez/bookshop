@@ -151,8 +151,8 @@ export default function Home() {
       <main className='container mx-auto max-w-[1152px] px-4'>
         <Navigation />
         <Banner />
-        <section className='pt-44 pb-24 flex items-start'>
-          <aside className='flex-none w-48 bg-before relative'>
+        <section className='pt-20 md:pt-44 pb-24 flex items-start  flex-col md:flex-row'>
+          <aside className='flex-none w-48 bg-before relative mb-10'>
             <ul>
               {categories.map((item) => (
                 <li key={item.label} className='mb-6'>
@@ -170,7 +170,7 @@ export default function Home() {
               ))}
             </ul>
           </aside>
-          <div className='grid grid-cols-1 xl:grid-cols-2 gap-20'>
+          <div className='grid grid-cols-1 xl:grid-cols-2 gap-10 md:gap-20'>
             {products.map((item) => {
               let rating = []
               for (let i = 0; i < 5; i++) {
@@ -181,8 +181,11 @@ export default function Home() {
                 }
               }
               return (
-                <div key={item.name} className='flex mb-5 max-w-md'>
-                  <div className='flex-none relative w-52 h-[300px] shadow-promo mr-9'>
+                <div
+                  key={item.name}
+                  className='flex mb-5 max-w-md flex-col md:flex-row'
+                >
+                  <div className='flex-none relative w-[288px] md:w-52 h-[408px] md:h-[300px] shadow-promo mb-8 md:mb-0 md:mr-9'>
                     <Image src={item.imageUrl} layout='fill'></Image>
                   </div>
                   <div>
