@@ -1,34 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# BookShop
 
-## Getting Started
+Esta é a implemetação do Design Criado pela Olha Soroka, [Design Free do Uplabs](https://www.uplabs.com/posts/bookshop-website-70dcb988-5591-400c-a294-21f915be4db6).
 
-First, run the development server:
+## Índice
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+- [Visão Geral](#overview)
+  - [O Design](#the-challenge)
+  - [Links](#links)
+- [Etapas](#my-process)
+  - [Construído com](#built-with)
+  - [Desenvolvimento contínuo](#continued-development)
+- [Autor](#author)
+- [Agradecimentos](#acknowledgments)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Visão Geral
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+### O Design
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+![](./public/readme/bookshop-design.png)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Links
 
-## Learn More
+- Design URL: [https://www.uplabs.com/](https://www.uplabs.com/posts/bookshop-website-70dcb988-5591-400c-a294-21f915be4db6)
+- Live Site URL: [https://bookshop-micaelsgarcez.vercel.app/](https://bookshop-micaelsgarcez.vercel.app/)
 
-To learn more about Next.js, take a look at the following resources:
+## Etapas
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Construído com
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- CSS Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/) - JS library
+- [Next.js](https://nextjs.org/) - React framework
+- [TailwindCSS](https://tailwindcss.com/) - For styles
+- [Framer Motion](https://www.framer.com/motion/) - For animations
 
-## Deploy on Vercel
+### Desenvolvimento contínuo
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Usei este projeto para continuar focando na área de Frontend, para melhorar o meu desenvolvimento e ficar mais confortável ao dia a dia aprendendo ténicas úteis, refinar e aperfeiçoar mais habilidades.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+## Autor
+
+- Website - [Micael Garcez](https://www.micaelweb.com.br)
+- Linkedin - [micael-garcez-dev](https://www.linkedin.com/in/micael-garcez-dev/)
+- Instagram - [@micaelgarcez.dev](https://www.instagram.com/micaelgarcez.dev/)
+
+## Agradecimentos
+
+Obrigado, pai e mãe por estarem sempre ao meu lado e por me ensinarem tanto!
