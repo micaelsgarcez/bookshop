@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Banner() {
   return (
-    <div className='block relative'>
+    <section className='block relative'>
       <Image
         src='/banner.png'
         layout='responsive'
@@ -34,6 +34,6 @@ export default function Banner() {
           quality={100}
         ></Image>
       </a>
-    </div>
+    </section>
   )
 }
