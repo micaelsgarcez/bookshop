@@ -28,11 +28,11 @@ Esta é a implemetação do Design Criado pela Olha Soroka, [Design Free do Upla
 
 ### Construído com
 
-- Semantic HTML5 markup
-- CSS custom properties
+- HTML5
+- CSS
 - Flexbox
 - CSS Grid
-- Mobile-first workflow
+- Mobile-first
 - [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 - [TailwindCSS](https://tailwindcss.com/) - For styles
