@@ -79,6 +79,68 @@ export default function Home() {
       link: '#'
     }
   ]
+  const categories = [
+    {
+      link: '#',
+      label: 'Bestsellers'
+    },
+    {
+      link: '#',
+      label: 'Art & Fashion'
+    },
+    {
+      link: '#',
+      label: 'Biography'
+    },
+    {
+      link: '#',
+      label: 'Business'
+    },
+    {
+      link: '#',
+      label: `Children's`
+    },
+    {
+      link: '#',
+      label: 'Fiction & Poetry'
+    },
+    {
+      link: '#',
+      label: 'Education'
+    },
+    {
+      link: '#',
+      label: 'Film, TV & Drama'
+    },
+    {
+      link: '#',
+      label: 'Food & Drink'
+    },
+    {
+      link: '#',
+      label: 'Health & Wellbeing'
+    },
+    {
+      link: '#',
+      label: 'History & Politics'
+    },
+    {
+      link: '#',
+      label: 'Home & Garden'
+    },
+    {
+      link: '#',
+      label: `Languages with Grant`
+    },
+    {
+      link: '#',
+      label: 'Sport & Hobbies'
+    },
+    {
+      link: '#',
+      label: 'Travel & Maps'
+    }
+  ]
 
   return (
     <div className='overflow-hidden'>
@@ -89,27 +151,23 @@ export default function Home() {
       <main className='container mx-auto max-w-[1152px] px-4'>
         <Navigation />
         <Banner />
-        <section className='pt-44 pb-24 flex'>
-          <aside className='flex-none w-48'>
+        <section className='pt-44 pb-24 flex items-start'>
+          <aside className='flex-none w-48 bg-before relative'>
             <ul>
-              <li>
-                <a href='#'>Bestsellers</a>
-              </li>
-              <li>
-                <a href='#'>Bestsellers</a>
-              </li>
-              <li>
-                <a href='#'>Bestsellers</a>
-              </li>
-              <li>
-                <a href='#'>Bestsellers</a>
-              </li>
-              <li>
-                <a href='#'>Bestsellers</a>
-              </li>
-              <li>
-                <a href='#'>Bestsellers</a>
-              </li>
+              {categories.map((item) => (
+                <li key={item.label} className='mb-6'>
+                  <a
+                    className={`hover:text-[#1C2A39] transition-all duration-300 ${
+                      item.label == 'Bestsellers'
+                        ? 'pl-5 circle-before relative font-bold text-md text-[#1C2A39]'
+                        : 'text-xs font-medium text-[#5C6A79] '
+                    }`}
+                    href={item.link}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </aside>
           <div className='grid grid-cols-2 gap-20'>

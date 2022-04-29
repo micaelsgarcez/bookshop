@@ -33,3 +33,33 @@ textarea {
   transform: translate(-50%, -50%);
   box-shadow: 0 24px 36px rgba(53, 49, 84, 0.28);
 }
+
+.circle-before:before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #756ad3;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.bg-before > * {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-before:before {
+  content: '';
+  display: block;
+  width: max(100%, 420px);
+  height: calc(100% + 64px);
+  background-color: #efeef6;
+  z-index: 0;
+  position: absolute;
+  left: 50%;
+  top: -44px;
+  transform: translateX(-50%);
+}
